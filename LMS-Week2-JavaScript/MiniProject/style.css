@@ -1,0 +1,17 @@
+form{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 500px;
+}
+
+button{
+    padding: 7px 15px;
+    background-color: green;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ini juga style bikin sendiri */

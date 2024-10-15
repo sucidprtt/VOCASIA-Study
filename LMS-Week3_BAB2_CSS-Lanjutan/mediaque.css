@@ -1,0 +1,35 @@
+div{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+
+/* styling media diterapkan dengan jarak luas layar minimal 600px hingga maksimal 900px */
+/* diluar jarak tersebut maka mengggunkan styling default diatas */
+@media (min-width: 600px) and (max-width: 900px){
+    div{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* styling diterapkan, jika besar layar <= kurang dari atau sama dengan 400px dan 400px kebawah */
+@media (max-width: 400px){
+    div{
+        background-color: green;
+    }
+}
+
+/* styling diterapkan, jika besar layar >= lebih besar atau sama dengan 1000px dan 100px keatas */
+@media (min-width: 1000px){
+    div{
+        background-color: chocolate;
+    }
+}
+
+/* styling akan diterapkan, jika layar otomatis posisi landcape */
+@media screen and (orientation: landscape){
+    div{
+        border-radius: 50px;
+    }
+}

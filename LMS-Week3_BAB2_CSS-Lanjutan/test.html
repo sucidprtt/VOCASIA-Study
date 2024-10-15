@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Tester</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 5rem;
+            font-family: "Arvo", bold;
+            text-shadow: 3px 0 lightgray;
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover{
+            transform: scale(1.5);
+        }
+
+        .keyboard{
+            display: flex;
+            justify-content: center;
+        }
+
+        .key{
+            border: 10px solid black;
+            font-size: 5rem;
+            font-family: "Arvo", bold;
+            line-height: 1;
+            font-weight: 900;
+            color: crimson;
+            text-shadow: 3px 0 white;
+            border-radius: 15px;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            margin: 10px;
+            background-color: bisque;
+        }
+
+        .key.active{
+            background-color: gold !important;
+            border-color: darkorange !important; 
+            animation: scaleUp 0.5s ease-out;
+        }
+
+        @keyframes scaleUp{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyboard Tester</h1>
+        <div class="keyboard">
+            <button class="q key">Q</button>
+            <button class="w key">W</button>
+            <button class="e key">E</button>
+            <button class="r key">R</button>
+            <button class="t key">T</button>
+            <button class="y key">Y</button>
+        </div>
+    <script src="./test.js"></script>
+</body>
+</html>

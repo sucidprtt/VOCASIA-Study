@@ -1,0 +1,26 @@
+/* title style */
+.highlight {
+    color: coral;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* button style */
+.btn {
+    background-color: lime;
+    color: white;
+    border: 2px solid limegreen;
+}
+
+/* item style replacement */
+.new-item {
+    background-color: lightgrey;
+    padding: 10px;
+    border-bottom:1px solid black;
+}
+
+/* checkbox */
+.styled-checkbox {
+    accent-color: orange;
+    transform: scale(1.5);
+}

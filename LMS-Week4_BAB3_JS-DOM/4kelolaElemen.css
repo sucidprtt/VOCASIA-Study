@@ -1,0 +1,10 @@
+#content{
+    margin-top: 20px;
+}
+
+.item{
+    margin: 5px 0;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid lightslategrey;
+}
