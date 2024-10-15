@@ -1,0 +1,29 @@
+/* html {
+    background: green;
+} */
+
+/* file external.html */
+h1 {
+    color: green;
+}
+
+/* File index.html */
+h2 {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+#main {
+    color: green;
+}
+
+p[draggable] {
+    color: purple;
+}
+
+*{
+    background-color:burlywood;
+}

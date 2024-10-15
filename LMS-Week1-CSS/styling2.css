@@ -1,0 +1,13 @@
+#green-button {
+    background-color: green;;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px; 
+}
+
+#green-title {
+    font-weight: normal; 
+    color: green;
+}
