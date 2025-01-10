@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Review Film</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">
+                <img class="logo" src="./image/LogoTBZ.png" alt="Logo">
+                <p>Moveesh.</p>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Watchlist</a>
+                <a class="nav-link" href="#">Popular</a>
+            </div>
+            <div class="burger-menu">&#9776;</div> <!-- Ikon Menu Bar -->
+            <div class="nav-btn">
+                <button class="btn-item1">Login</button>
+                <button class="btn-item2">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Search Form -->
+    <section>
+        <div class="search-form">
+            <h1>Welcome, Hoomeesh!</h1>
+            <div>
+                <p class="paragraf">Are U looking for watch a movie?</p>
+            </div>
+            <div>
+                <input class="search-input" id="search" type="text" placeholder="search for available here!">
+            </div>
+        </div>   
+    </section>
+
+    <!-- Trending Movies Section -->
+    <section class="movies-section" id="trending-section">
+        <button class="movies-button">Trending Movies</button>
+        <div class="movies-container" id="trending-movies">
+        <!-- pencarian film otomatis/dinamis terjadi disini  -->
+        </div>
+    </section>
+
+    <!-- Latest Movies Section -->
+    <section class="movies-section" id="latest-section">
+        <button id class="movies-button">Latest Movies</button>
+        <div class="movies-container" id="latest-movies">
+        <!-- pencarian film otomatis/dinamis terjadi disini  -->
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="movies-section" id="results-section" style="display: none;">
+        <button class="movies-button">Results</button>
+        <div class="movies-container" id="results-movies">
+        <!-- hasil film otomatis/dinamis terjadi disini  -->
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 <span>Moveesh.</span> All Rights Reserved.</p>
+    </footer>
+
+    <!-- Sciprt JS Dom -->
+    <script src="./app.js"></script>
+    
+</body>
+</html>
+

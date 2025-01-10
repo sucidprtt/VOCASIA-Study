@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background-color: lightgray;
+    color: black;
+}
+
+/* Header Navbar */
+nav{
+    background-color: white;
+    color: steelblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow:0 2px 6px gray;
+}
+
+/* nav a, kalau tag nya sama <a>*/
+.nav-item .nav-link{ 
+    text-decoration: none;
+    color:black;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center; 
+}
+
+.nav-logo .logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+nav p{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight:900;
+    font-size: 35px;
+}
+
+.nav-logo, .nav.item, .nav-btn{
+    flex: 1; /* mengatur elemen navbar menengah sesuai elemen dibawahnya */
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* mengatur jarak antar item */
+}
+
+.nav-link{
+    text-decoration: none;
+    position: relative;
+    color: black; /* warna awal teks */
+    padding-bottom: 5px;
+    transition: color 0.2s ease; /* transisi perubahan warna */
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: steelblue; /* warna underline */
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease; /* animasi underline */
+}
+
+.nav-link:hover{
+    color: steelblue; 
+}
+
+.nav-link:hover::after{
+    width: 100%; 
+}
+
+.nav-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav button{
+    width: 110px;  /* untuk memastikan ukuran button sama  */       
+    font-weight: 700;
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-item1{
+    background-color:steelblue;
+    color: white;
+}
+
+.btn-item2{
+    background-color: white;
+    color: steelblue;
+    border: 2px solid black;
+    margin-right: 50px;
+    margin-left: 15px;
+}
+
+/* Section Form */
+.search-form{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 40px;
+    background: linear-gradient(to right, black, steelblue); /* gradient dari kiri ke kanan */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paragraf{
+    margin-top: 25px;
+}
+
+.search-input{
+    background-color: white;
+    padding: 10px 70px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* Movies Section */
+
+.movies-section{
+    padding: 20px;
+}
+  
+.movies-section .movies-button{
+    background: linear-gradient(to right, black, steelblue);
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 210px;
+}
+
+.movies-button{
+    font-size: 20px;
+}
+  
+.movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#results-movies{
+    justify-content: flex-start; /* film cards hasil pencarian tetap di kiri */
+    margin-left: 35px;
+}
+  
+.movie-card{
+    width: 220px;
+    background-color: white;
+    padding: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+  
+.movie-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.movie-card h3{
+    text-align: center;
+    font-weight: 600;
+}
+  
+.no-results{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 450;
+    text-align: center;
+    color: red;
+    margin-top: 65px;
+    margin-bottom: 98px;
+}
+
+/* Footer */
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 35px;
+    box-shadow:0 2px 6px gray;
+}
+
+footer span{
+    color: steelblue;
+    font-weight: bold;
+}
+
+  
+    @media only screen and (max-width: 780px){
+        .movie-card{
+        width: 300px;
+        }
+    
+        .search-input{
+        width: 50%;
+        }
+    }
+    
+
+/* Tampilkan menu bar di layar kecil */
+.burger-menu{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: steelblue;
+}
+
+    @media only screen and (max-width: 780px){
+        .nav-item, .nav-btn{
+            display: none; 
+        }
+
+        .burger-menu{
+            display: block;
+            margin-right: 20px;
+        }
+    }
